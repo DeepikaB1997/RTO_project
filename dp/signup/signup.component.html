@@ -1,0 +1,102 @@
+<h1 style="text-align: center;">Sign Up</h1>
+
+
+  
+  <form #myForm="ngForm" (ngSubmit)="register(myForm)" role="form" style="width: 40% ; margin: auto;">
+
+    <div class="form-group">
+      User Name
+      <input type="text" name="userName" ngModel class="form-control" id="userName" placeholder="Enter your name">
+    </div>
+  
+    <div class="form-group">
+     Email
+      <input type="email" name="email" ngModel class="form-control" id="email" placeholder="Enter your Email">
+    </div>
+    
+    <div class="form-group">
+     Password
+      <input type="password" name="password" ngModel class="form-control" id="password" placeholder="Enter your Password">
+    </div>
+  
+    <div class="form-group">
+      Role
+      <input type="text" name="role" ngModel class="form-control" id="role" placeholder="Enter your role">
+    </div>
+
+    <div class="form-group">
+      Address
+      <input type="text" name="address" ngModel class="form-control" id="address" placeholder="Enter your address">
+    </div>
+  
+    <div class="form-group">
+      Gender
+          <input type="radio" ngModel class="form-control"  name="gender" value="MALE" checked>MALE<br>
+          <input type="radio" ngModel class="form-control"  name="gender" value="FEMALE">FEMALE<br>
+          <input type="radio" ngModel class="form-control"  name="gender" value="OTHER">OTHER  
+    </div>
+    <div class="form-group">
+        Date of Birth
+        <input type="date" name="dob" ngModel class="form-control" id="address" >
+    </div>
+
+    <div class="form-group">
+     Blood  Group
+     <select ngModel class="form-control">
+        <option  ngModel class="form-control" name="bloodGroup" value="O">O</option>
+        <option  ngModel class="form-control" name="bloodGroup" value="A">A</option>
+        <option  ngModel class="form-control" name="bloodGroup" value="B">B</option>
+        <option  ngModel class="form-control" name="bloodGroup" value="AB">AB</option>
+       
+     </select>
+  </div>
+
+  <div class="form-group">
+    Aadhar Number
+    <input  type="text" id="aadharNo" ngModel class="form-control"  name="aadharNo">
+
+</div>
+
+<div class="form-group">
+  Qualification
+    <input  type="text" id="qualification" ngModel class="form-control"  name="qualification">
+
+</div>
+<div class="form-group">
+    Document details
+    <input  type="file" id="document" ngModel class="form-control"  name="document">
+
+</div>
+
+<div class="form-group">
+  Date of Application
+  <input type="date" name="appDate" ngModel class="form-control" id="appDate"  >
+</div>
+
+<div class="form-group">
+  Vehicle Type
+  <br>
+  <input type="checkbox" ngModel class="form-control" name="vehicleType" value="TWOWHEELER"> TWOWHEELER
+  <input type="checkbox" ngModel class="form-control" name="vehicleType" value="FOURWHEELER"> FOURWHEELER<br>
+</div>
+
+
+
+<!--<div class="form-group">
+  <div *ngFor="let vehicle of vehicleType">
+      <input type="checkbox"
+                name="vehicleType"
+                value="{{vehicle.id}}"
+                [(ngModel)]="vehicle"/>
+
+      <label>{{vehicle.name}}</label>
+  </div>
+</div>-->
+  
+    <button type="submit" class="btn btn-success">Sign Up</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+    <button type="submit" class="btn btn-danger" (click)="cancel()">Cancel</button>
+  </form>
+  
+  
+

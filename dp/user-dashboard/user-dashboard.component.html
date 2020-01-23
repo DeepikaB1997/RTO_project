@@ -1,0 +1,59 @@
+
+<!--<div class="container">
+
+    <div class="table-fixed" style="width: 50%"> 
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>AppNo</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Vehicle Type</th>
+            <th>Status</th> 
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of user">
+            <td>{{user.userId}}</td>
+            <td>{{user.userName}}</td>
+            <td>{{user.address}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.vehicleType}}</td>
+            <td>{{user.status}}</td>
+  
+            
+            
+            <td>
+                <button type="button" routerLink="/getUserById(userId)" class="btn btn-warning">Update</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>-->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+           
+            <div id="sidebar" class="well sidebar-nav">
+                <h5><i class="glyphicon glyphicon-home"></i>
+                    <small><b>USER MANAGEMENT</b></small>
+                </h5>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a routerLink="/update/:userId">Update Application Form</a></li>
+                    <li class="active"><a routerLink="/user/scheduleExam">Manage Exam</a></li>
+                    <li class="active" ><a routerLink="/user/attemptExam">Attempt Exam</a></li>
+                </ul>
+               
+              
+            </div>
+        </div>
+        <div class="col-md-8">
+            
+        </div>
+    </div>
+  </div>
